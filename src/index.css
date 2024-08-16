@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;npx tailwindcss -i ./src/input.css -o ./src/output.css --watch
+
+.active {
+
+    border:2px solid rgb(0, 145, 255);
+    background-color: rgb(44, 44, 44) !important;
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+    background-color: rgb(53, 53, 53);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(103, 103, 103);
+}
+
+* {
+    scroll-behavior: smooth;
+}
+.dark .active {
+    border:1px solid rgba(0, 145, 255, 0.442);
+    background-color: rgba(23, 35, 58, 0.364) !important;
+}
